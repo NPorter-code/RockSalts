@@ -1,0 +1,29 @@
+body{
+    background-color: #f1faf8;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.btn{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 3.3em;
+}
+
+.btn:hover{
+    background-color: #3a84ad;
+}
+
+
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #4c88a8;
+    position: fixed;
+}
+
+.navContainer i{
+    color: #f1faf8;
+}
