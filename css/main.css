@@ -1,13 +1,28 @@
 body{
     background-color: #f1faf8;
-    margin-right: 100px;
-    margin-left: 100px;
 }
 
 .btn{
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 3.3em;
+    background-color: #4c88a8;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3.3em;
+    align-self: center;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 3.3em;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.btn a{
+    color:#f1faf8
 }
 
 .btn:hover{
@@ -17,11 +32,15 @@ body{
 
 
 .navContainer{
+    margin-left: -8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #4c88a8;
+    margin-top: -8px;
     position: fixed;
+    z-index: 2;
+    width: 100%;
 }
 
 .navContainer i{
