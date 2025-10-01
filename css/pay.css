@@ -1,0 +1,50 @@
+body{
+    background-color: #e3f1fa;
+}
+
+.btn{
+    margin-left: 20px;
+    margin-right: 60px;
+    background-color: #4c88a8;
+    align-self: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn img{
+    margin-left: 50px;
+    margin-right: 30px;
+    height: 3.3em;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.btn a{
+    color:#f1faf8;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #377697;
+}
+
+.navContainer{
+    margin-left: -8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #4c88a8;
+    margin-top: -8px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    float: right;
+}
+
+.navContainer i{
+    color: #f1faf8;
+}
