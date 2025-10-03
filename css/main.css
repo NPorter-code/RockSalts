@@ -66,16 +66,20 @@ body{
     position: relative;
     z-index: 2;
     display: flex;
-    background-color: #4cabdf;
+    background-color: #59abd8;
     margin-left: 20em;
     margin-right: 20em;
     margin-top: -4.5em;
+    text-align: center;
 }
 
 .box{
     margin-left: auto;
     margin-right: auto;
-        border-top-width: 0px;
+    width: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top-width: 0px;
     border-top-color: #4ca0ce;
     border-top-style: solid;
     border-right-width: 1px;
@@ -90,5 +94,9 @@ body{
 }
 
 h1{
+    color: #f1faf8;
+}
+
+p{
     color: #f1faf8;
 }
