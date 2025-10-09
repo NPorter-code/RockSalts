@@ -95,6 +95,27 @@ body{
     border-left-style: solid;
 }
 
+.Aboxes{
+    margin-top: 3em;
+    margin-right: -.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Abox{
+    background-color: #4cb3f3;
+    text-align: center;
+    margin-left: .25em;
+    margin-right: .25em;
+    width: 225px;
+}
+
+.fuckinwordsidk{
+    text-align: center;
+    margin-top: 8em;
+}
+
 h3{
     font-size: 22px;
     color: #f1faf8;
