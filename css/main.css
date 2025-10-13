@@ -69,8 +69,8 @@ body{
     position: relative;
     z-index: 1;
     display: flex;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 20em;
+    margin-right: 20em;
     margin-top: -4.5em;
     text-align: center;
 }
@@ -101,8 +101,8 @@ body{
 .Aboxes{
     margin-top: 3em;
     display: flex;
-    margin-left: 9em;
-    margin-right: 9em;
+    margin-left: 19em;
+    margin-right: 19em;
 }
 
 .Abox{
