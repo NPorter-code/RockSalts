@@ -55,6 +55,30 @@ body{
     color: #f1faf8;
 }
 
+.UI{
+    position: relative;
+    text-align: center;
+}
+
+.Uiwords{
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    top: 0px;
+    color: #e2e8e9;
+}
+
+.Uiwords p{
+    font-size: 18px;
+    color: #e2e8e9;
+}
+
 .Ui1 {
     position: relative;
     z-index: 1;
@@ -63,25 +87,23 @@ body{
     height: 500px;
     object-fit: cover;
     margin-left: -8px;
+    filter: brightness(85%);
 }
 
 .Uiboxes{
     position: relative;
-    z-index: 1;
     display: flex;
-    margin-left: 20em;
-    margin-right: 20em;
+    justify-content: center;
+    z-index: 1;
     margin-top: -4.5em;
-    text-align: center;
 }
 
 .Uibox{
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 1000px;
-    justify-content: space-between;
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
     background-color: #59abd8;
-    min-width: 100px;
     padding-left: 30px;
     padding-right: 30px;
     border-top-width: 0px;
@@ -101,14 +123,16 @@ body{
 .Aboxes{
     margin-top: 3em;
     display: flex;
-    margin-left: 19em;
-    margin-right: 19em;
+    justify-content: center;
+
 }
 
 .Abox{
     position: relative;
-    width: 1000px;
-    background-color: #4cb3f3;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 340px;
+    background-color: #60b0e2;
     text-align: center;
     border-style: solid;
     border-color: #37a5e0;
@@ -137,4 +161,8 @@ h3{
 p{
     line-height: 1.5;
     color: #f1faf8;
+}
+
+h1{
+    font-size: 50px;
 }
