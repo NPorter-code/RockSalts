@@ -1,5 +1,6 @@
 body{
     background-color: #e3f1fa;
+    overflow-x: hidden;
 }
 
 .btn{
@@ -13,10 +14,13 @@ body{
 }
 
 .exclude{
-    margin-top: 10px;
     margin-right: auto;
-    margin-left: 100px;
+    margin-left: 50px;
     padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 25px;
+
 }
 
 .exclude img{
