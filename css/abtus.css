@@ -53,3 +53,9 @@ body{
 .navContainer i{
     color: #f1faf8;
 }
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+}

@@ -22,13 +22,18 @@
             <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
         </div>
         <div class="contactform">
-            <form method="post" action="">
+            <form method="post" action="php/contact.php" enctype="multipart/form-data">
                 <!--Name-->
-                <input type="text" name="name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required><br><br>
                 <!--Email-->
-                <input type="text" name="Email">
+                <label for="email">E-Mail:</label>
+                <input type="text" name="email" required><br><br>
                 <!--Comment-->
-                <textarea name="comment" rows="5" cols="40"></textarea>
+                <label for="comment">Questions:</label><br>
+                <textarea name="comment" rows="5" cols="40" required></textarea><br><br>
+                <!--Submit Button-->
+                <button type="submit">Submit!</button>
             </form>
         </div>
     </body>
