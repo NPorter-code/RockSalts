@@ -8,20 +8,22 @@
 <body>
 
 <?php
-
 // define variables
-$name = $_POST["name"];
-$email = $_POST["email"];
-$comment = $_POST["comment"];
 
+if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
+    echo 'We don\'t have mysqli!!!';
+} else {
+    echo 'Phew we have it!';
+}
 
 //Log into server
 $servername = "localhost";
-$username = "ChaosCat";
-$password = "WhiteB1ackTe@";
+$username = "root";
+$password = "TotallySQLingR!ghtn0w";
+$dbname = "SaltShuttleServer";
 
 // Create Connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check Connection
 if ($conn->connect_error) {
@@ -30,31 +32,7 @@ if ($conn->connect_error) {
     echo "Connected Successfully <br><br>";
 }
 
-if ($Name === "" and $comment === "" and $email === "") { # if sName and author === nothing dont put into database
-    echo "All Feilds Required"; 
-} else { # put data into database
-$sql = "INSERT INTO saltData (dispName, Email, Comment);
-VALUES ('$Name', '$email', '$comment')";
-}
 
-if ($conn->query($sql) === TRUE) {
-    echo "This fuckin shit worked, HELL YEAH!!";
-} else {
-    echo "Damn it, it didn't work, you fucked it up man...  :( <br><br> Error:" . $sql . "<br>" . $conn->error;
-}
-
-$sql = "SELECT fileID, dispName, Email, Comment FROM saltData";
-$result = $conn->query($squl);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["dispName"]. " - Email: " . $row["Email"]. "- Comment:" . $row["Comment"]. "<br>";
-    }
-}
-    else {
-        echo "0 results";
-    }
 
 $conn->close();
 ?>
