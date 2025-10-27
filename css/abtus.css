@@ -1,6 +1,6 @@
 body{
     background-color: #e3f1fa;
-    font-family: "asap", PT Sans;
+    font-family: PT-sans, sans-serif, "asap";
     font-weight: 600;
     font-style: normal;
 }
@@ -60,7 +60,28 @@ body{
 }
 
 .contactform{
+    margin-top: 25em;
     display: flex;
     flex-direction: column;
     padding-top: 5em;
+}
+
+.form{
+    border-radius: 25px;
+    border-color: #57bbf1;
+    border-style: solid;
+    border: 1px;
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    text-align: left;
+    width: 750px;
+    background-color: #c2e8ff;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+textarea{
+    font-family: sans-serif;
 }

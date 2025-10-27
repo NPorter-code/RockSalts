@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/abtus.css">
         <link rel="stylesheet" href="https://use.typekit.net/sxb6bat.css">
         <link rel="stylesheet" href="php/contact.php">
+        <link rel="stylesheet" href="https://fonts.google.com/">
 
         <!--fontawesome icons-->
         <script src="https://kit.--fontawesome.com/e1899146a.js"></script>
@@ -22,16 +23,16 @@
             <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
         </div>
         <div class="contactform">
-            <form method="post" action="php/contact.php" enctype="multipart/form-data">
+            <form class="form" method="post" action="php/contact.php" enctype="multipart/form-data">
                 <!--Name-->
-                <label for="name">Name:</label>
-                <input type="text" name="name" required><br><br>
+                <input type="text" name="Fname" placeholder="First Name *" required>
+                <input type="text" name="Lname" placeholder="Last Name *" required>
+                <br><br>
                 <!--Email-->
-                <label for="email">E-Mail:</label>
-                <input type="text" name="email" required><br><br>
+                <input type="text" name="email" placeholder="Email *" required><br><br>
                 <!--Comment-->
                 <label for="comment">Questions:</label><br>
-                <textarea name="comment" rows="5" cols="40" required></textarea><br><br>
+                <textarea name="comment" rows="5" cols="40" placeholder="How can we assist you?" required></textarea><br><br>
                 <!--Submit Button-->
                 <button type="submit">Submit!</button>
             </form>
