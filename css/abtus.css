@@ -60,13 +60,13 @@ body{
 }
 
 .contactform{
-    margin-top: 25em;
     display: flex;
     flex-direction: column;
     padding-top: 5em;
 }
 
 .form{
+    margin-top: 17em;
     border-radius: 25px;
     border-color: #57bbf1;
     border-style: solid;
