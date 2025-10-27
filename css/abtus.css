@@ -1,6 +1,11 @@
 body{
     background-color: #e3f1fa;
+    font-family: "asap", PT Sans;
+    font-weight: 600;
+    font-style: normal;
 }
+
+
 
 .btn{
     margin-left: 20px;
