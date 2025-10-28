@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+    <title>Catalyst Rock Salts</title>
+        <meta charset="utf-8">
+        <meta name="veiwport" content="width-device-width, initial-scale=1">
 
-<head>
-    <title>Trying to get php to work</title>
-    <meta charset="utf-8">
-</head>
-<body>
+        <link rel="stylesheet" href="css/abtus.css">
+        <link rel="stylesheet" href="https://use.typekit.net/sxb6bat.css">
+        <link rel="stylesheet" href="php/contact.php">
+
+        <!--fontawesome icons-->
+        <script src="https://kit.--fontawesome.com/e1899146a.js"></script>
+    </head>
+    <body>
 
 <?php
-// define variables
 
-if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
-    echo 'We don\'t have mysqli!!!';
-} else {
-    echo 'Phew we have it!';
-}
-
-//Log into server
-$servername = "localhost";
-$username = "root";
-$password = "TotallySQLingR!ghtn0w";
-$dbname = "SaltShuttleServer";
-
-// Create Connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check Connection
-if ($conn->connect_error) {
-    die("Connection Failed: ". $conn->connect_error);
-} else{
-    echo "Connected Successfully <br><br>";
-}
-
-
-
-$conn->close();
 ?>
-
-</body>
+        <!--Nav Bar-->
+        <div class="navContainer">
+            <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
+            <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
+            <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
+            <div class="btn"><a href="contact.html"><h2>Contact Us</h2></a></div>
+            <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
+        </div>
+        <div class="contactform">
+            <form method="post" action="php/contact.php" enctype="multipart/form-data">
+                <!--Name-->
+                <label for="name">Name:</label>
+                <input type="text" name="name" required><br><br>
+                <!--Email-->
+                <label for="email">E-Mail:</label>
+                <input type="text" name="email" required><br><br>
+                <!--Comment-->
+                <label for="comment">Questions:</label><br>
+                <textarea name="comment" rows="5" cols="40" required></textarea><br><br>
+                <!--Submit Button-->
+                <button type="submit">Submit!</button>
+            </form>
+        </div>
+    </body>
 </html>
