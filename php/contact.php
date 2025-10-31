@@ -14,7 +14,27 @@
     <body>
 
 <?php
+//define variables and set to empty values
+$nameErr = $emailErr = $commErr = "";
+$name = $email = $comm = "";
 
+if ($_SERVER["REQUEST_METHOD" == "POST"]) {
+    if (empty($_POST["name"])) {
+        $nameErr = "Name is Required";
+    } else {
+        $name = ($_POST["name"]);
+    }
+    if (empty($_POST["name"])) {
+        $nameErr = "Name is Required";
+    } else {
+        $name = ($_POST["name"]);
+    }
+    if (empty($_POST["name"])) {
+        $nameErr = "Name is Required";
+    } else {
+        $name = ($_POST["name"]);
+    }
+}
 ?>
         <!--Nav Bar-->
         <div class="navContainer">
