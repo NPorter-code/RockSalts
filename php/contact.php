@@ -24,15 +24,15 @@ if ($_SERVER["REQUEST_METHOD" == "POST"]) {
     } else {
         $name = ($_POST["name"]);
     }
-    if (empty($_POST["name"])) {
-        $nameErr = "Name is Required";
+    if (empty($_POST["email"])) {
+        $emailErr = "Email is Required";
     } else {
-        $name = ($_POST["name"]);
+        $email = ($_POST["email"]);
     }
-    if (empty($_POST["name"])) {
-        $nameErr = "Name is Required";
+    if (empty($_POST["comment"])) {
+        $commErr = "Write your inquiry here";
     } else {
-        $name = ($_POST["name"]);
+        $comm = ($_POST["comment"]);
     }
 }
 ?>
@@ -45,16 +45,22 @@ if ($_SERVER["REQUEST_METHOD" == "POST"]) {
             <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
         </div>
         <div class="contactform">
-            <form method="post" action="php/contact.php" enctype="multipart/form-data">
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
                 <!--Name-->
                 <label for="name">Name:</label>
-                <input type="text" name="name" required><br><br>
+                <input type="text" name="name">
+                <span class="error">* <?php echo $nameErr;?></span>
+                <br><br>
                 <!--Email-->
                 <label for="email">E-Mail:</label>
-                <input type="text" name="email" required><br><br>
+                <input type="text" name="email">
+                <span class="error">* <?php echo $emailErr;?></span>
+                <br><br>
                 <!--Comment-->
                 <label for="comment">Questions:</label><br>
-                <textarea name="comment" rows="5" cols="40" required></textarea><br><br>
+                <textarea name="comment" rows="5" cols="40"></textarea>
+                <span class="error">* <?php echo $commErr;?></span>
+                <br><br>
                 <!--Submit Button-->
                 <button type="submit">Submit!</button>
             </form>
