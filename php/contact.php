@@ -18,7 +18,7 @@
 $nameErr = $emailErr = $commErr = "";
 $name = $email = $comm = "";
 
-if ($_SERVER["REQUEST_METHOD" == "POST"]) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
         $nameErr = "Name is Required";
     } else {
