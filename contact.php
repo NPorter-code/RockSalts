@@ -6,7 +6,6 @@
 
         <link rel="stylesheet" href="css/abtus.css">
         <link rel="stylesheet" href="https://use.typekit.net/sxb6bat.css">
-        <link rel="stylesheet" href="php/contact.php">
 
         <!--fontawesome icons-->
         <script src="https://kit.--fontawesome.com/e1899146a.js"></script>
@@ -41,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
             <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
             <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
-            <div class="btn"><a href="contact.html"><h2>Contact Us</h2></a></div>
+            <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
             <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
         </div>
         <div class="contactform">
