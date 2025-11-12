@@ -34,23 +34,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $comm = htmlspecialchars($_POST["comment"]);
     }
     if (isset($_POST['submit'])) {
-        // set email parameters
-        $to = "nathanielgaryporter@gmail.com";
-        $subject = "New customer question:" . $name;
-        $headers = "From: " . $email . "\r\n";
-        $headers .= "Reply-to: " . $email . "\r\n";
-        $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
-
-        //construct message
-        $email_message = "Name: " . $name . "\n";
-        $email_message .= "Email: " . $email . "\n\n";
-        $email_message .= "Message:\n" . $comm;
-
-        //send email
-        if (mail($to, $subject, $email_message, $headers)) {
-            echo "thank you for your valued question, it has been sent!";
+        if (empty($_POST["name" or "email" or "comment"])){
+            null;
         } else {
-            echo "you fucked it up, it doesnt work kell";
+            // set email parameters
+            $to = "nathanielgaryporter@gmail.com";
+            $subject = "New customer question:" . $name;
+            $headers = "From: " . $email . "\r\n";
+            $headers .= "Reply-to: " . $email . "\r\n";
+            $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
+
+            //construct message
+            $email_message = "Name: " . $name . "\n";
+            $email_message .= "Email: " . $email . "\n\n";
+            $email_message .= "Message:\n" . $comm;
+
+            //send email
+            if (mail($to, $subject, $email_message, $headers)) {
+                echo "thank you for your valued question, it has been sent!";
+            } else {
+                echo "you fucked it up, it doesnt work, kell";
+            }
         }
     }
 }
