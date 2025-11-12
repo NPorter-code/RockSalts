@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (mail($to, $subject, $email_message, $headers)) {
                 echo "thank you for your valued question, it has been sent!";
             } else {
-                echo "you fucked it up, it doesnt work, kell";
+                echo "you fucked it up, it doesnt work kell...";
             }
         }
     }
