@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!--Email-->
                 <label for="email">E-Mail:</label>
                 <input type="text" name="email">
-                <span class="error"> <?php echo $emailErr;?></span>
+                <span class="error">* <?php echo $emailErr;?></span>
                 <br><br>
                 <!--Comment-->
                 <label for="comment">Questions:</label><br>
