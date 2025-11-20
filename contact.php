@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
         </div>
         <div class="contactform">
-            <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data" novalidate>
+            <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
                 <!--Name-->
                 <label for="name">Name:</label>
                 <input id="form" type="text" name="name" autocomplete="off" required>
