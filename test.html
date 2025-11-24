@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta name="veiwport" content="width-device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/abtus.css">
+        <link rel="stylesheet" href="css/pay.css">
         <link rel="stylesheet" href="https://use.typekit.net/sxb6bat.css">
 
         <!--fontawesome icons-->
@@ -18,26 +18,25 @@
             <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
             <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
         </div>
-        <div class="contactform">
-            <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
-                <!--Name-->
-                <label for="name">Name:</label>
-                <input type="text" name="name">
-                <span class="error">* <?php echo $nameErr;?></span>
-                <br><br>
-                <!--Email-->
-                <label for="email">E-Mail:</label>
-                <input type="text" name="email">
-                <span class="error">* <?php echo $emailErr;?></span>
-                <br><br>
-                <!--Comment-->
-                <label for="comment">Questions:</label><br>
-                <textarea name="comment" rows="5" cols="40"></textarea>
-                <span class="error">* <?php echo $commErr;?></span>
-                <br><br>
-                <!--Submit Button-->
-                <button type="submit">Submit!</button>
-                <span class="submitted"></span>
+        <div class="heres_yer_fucking_form">
+            <form>
+                <h3>Name:</h3>
+                <input>
+                <h3>Email:</h3>
+                <input>
+                <h3>Adress:</h3>
+                <input>
+                <ul>
+                    <li>State: Utah</li>
+                    <li>Area:
+                        <input type="radio" name="area">A1
+                        <input type="radio" name="area">A1
+                        <input type="radio" name="area">A1
+                        <input type="radio" name="area">A1
+                        <input type="radio" name="area">A1
+                    </li>
+                    <button type="submit">Fuck my life</button>
+                </ul>
             </form>
         </div>
     </body>
