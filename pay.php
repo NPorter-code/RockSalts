@@ -16,7 +16,7 @@
 <?php
 //define variables and set to empty values
 $nameErr = $emailErr = $areaErr = "";
-$name = $email = $area = "";
+$name = $email = $area = $service = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
@@ -34,6 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $area = htmlspecialchars($_POST["area"]);
     }
+    if (empty($_POST["service"])) {
+        $areaErr = "Select Area";
+    } else {
+        $area = htmlspecialchars($_POST["service"]);
+    }
     if (isset($_POST['submit'])) {
         if (empty($_POST["name" or "email" or "area"])){
             null;
@@ -49,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $email_message = "Name: " . $name . "\n";
             $email_message .= "Email: " . $email . "\n\n";
             $email_message .= "Area:\n" . $area . "\n";
-            $email_message .= ""
+            $email_message .= "Service:\n" . $service;
 
             //send email
             if (mail($to, $subject, $email_message, $headers)) {
