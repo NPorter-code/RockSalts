@@ -1,6 +1,11 @@
 body{
     background-color: #e3f1fa;
+    font-family: PT-sans, sans-serif, "asap";
+    font-weight: 600;
+    font-style: normal;
 }
+
+
 
 .btn{
     margin-left: 20px;
@@ -52,4 +57,27 @@ body{
 
 .navContainer i{
     color: #f1faf8;
+}
+
+.paylink{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5em;
+    justify-content: center;
+}
+
+textarea{
+    font-family: sans-serif;
+    font-size: 1.25em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+input{
+    font-size: 1.25em;
+    width: 364px;
 }

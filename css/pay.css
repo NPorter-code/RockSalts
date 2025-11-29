@@ -53,3 +53,16 @@ body{
 .navContainer i{
     color: #f1faf8;
 }
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+.heres_yer_fucking_form{
+    display: flex;
+    padding-top: 5em;
+    background-color: #d8f2ff;
+    justify-content: center;
+    text-align: center;
+}
