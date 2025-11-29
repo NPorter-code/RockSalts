@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             null;
         } else {
             // set email parameters
-            $to = "nathanielgaryporter@gmail.com";
+            $to = "Admin@saltshuttle.com";
             $subject = "New customer question:" . $name;
             $headers = "From: " . $email . "\r\n";
             $headers .= "Reply-to: " . $email . "\r\n";
@@ -73,17 +73,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
                 <!--Name-->
                 <label for="name">Name:</label>
-                <input id="form" type="text" name="name" autocomplete="off" required>
+                <input id="form" type="text" name="name" autocomplete="off">
                 <span class="error">* <?php echo $nameErr;?></span>
                 <br><br>
                 <!--Email-->
                 <label for="email">E-Mail:</label>
-                <input id="form" type="text" name="email" autocomplete="off" required>
+                <input id="form" type="text" name="email" autocomplete="off">
                 <span class="error">* <?php echo $emailErr;?></span>
                 <br><br>
                 <!--Comment-->
                 <label for="comment">Questions:</label><br>
-                <textarea id="form" name="comment" rows="5" cols="40" autocomplete="off" required></textarea>
+                <textarea id="form" name="comment" rows="5" cols="40" autocomplete="off"></textarea>
                 <span class="error">* <?php echo $commErr;?></span>
                 <br><br>
                 <!--Submit Button-->

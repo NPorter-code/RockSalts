@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             null;
         } else {
             // set email parameters
-            $to = "nathanielgaryporter@gmail.com";
+            $to = "Admin@saltshuttle.com";
             $subject = "New customer Order:" . $name;
             $headers = "From: " . $email . "\r\n";
             $headers .= "Reply-to: " . $email . "\r\n";
@@ -79,17 +79,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
                 <!--Name-->
                 <label for="name">Name:</label>
-                <input id="form" type="text" name="name" autocomplete="off" required>
+                <input id="form" type="text" name="name" autocomplete="off">
                 <span class="error">* <?php echo $nameErr;?></span>
                 <br><br>
                 <!--Email-->
                 <label for="email">E-Mail:</label>
-                <input id="form" type="text" name="email" autocomplete="off" required>
+                <input id="form" type="text" name="email" autocomplete="off">
                 <span class="error">* <?php echo $emailErr;?></span>
                 <br><br>
                 <!--Comment-->
                 <label for="area">Area</label><br>
-                <br><br>
                 <ul>
                     <li>State: Utah</li>
                     <li>Area:
@@ -102,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </li>
                 </ul>
                 <br><br>
-                <label for="service">Service</label>
+                <label for="service">Services:</label>
                 <ul>
                     <li>
                         <input type="radio" name="service"><br>
