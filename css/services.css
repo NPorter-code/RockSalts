@@ -5,7 +5,16 @@ body{
     font-style: normal;
 }
 
-
+.formbtn {
+    background-color: #4cabdf;
+    border-radius: 15em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .btn{
     margin-left: 20px;
