@@ -70,10 +70,35 @@ body{
 
 .paylink{
     display: flex;
+    padding-top: 4em;
     flex-direction: column;
     text-align: center;
-    padding-top: 5em;
-    justify-content: center;
+}
+
+.colors{
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5em;
+    padding: 1em;
+    background-color: #5cb8e9;
+}
+
+.moving {
+    margin-top: -1em;
+}
+
+.moving1 {
+    margin-top: -.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    justify-self: center;
+    transform: translate(-8%, 50%);
 }
 
 textarea{
@@ -89,4 +114,16 @@ a {
 input{
     font-size: 1.25em;
     width: 364px;
+}
+
+h1 {
+    color: #f1faf8;
+}
+
+p {
+    color: #f1faf8;
+}
+
+li {
+    color: #f1faf8;
 }
