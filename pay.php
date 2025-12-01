@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (mail($to, $subject, $email_message, $headers)) {
                 echo "thank you for your valued question, it has been sent!";
             } else {
-                echo "you fucked it up, it doesnt work kell...";
+                echo "you f**ked it up, it doesnt work kell...";
             }
         }
     }
@@ -104,9 +104,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="service">Services:</label>
                 <ul>
                     <li>
-                        <input type="radio" name="service"><br>
-                        <input type="radio" name="service"><br>
-                        <input type="radio" name="service"><br>
+                        <input type="radio" name="service">Standard Ice Melt - $44.95<br>"For most standard driveways and walkways"<br>
+                        <input type="radio" name="service">Heavy Coverage Ice Melt - $49.95<br>"For long/steep driveways or heavy ice"<br>
+                        <p>Optional Add ons:</p>
+                        <input type="radio" name="addon">Same day/storm priority - +14.95<br>
+                        <p>Other options</p>
+                        <input type="radio" name="other1">Basic Ice Melt - $29.95<br>
+                        <input type="radio" name="other2">Ice Melt Bag Delivery Only - $17.95<br>
                     </li>
 
                 <br><br>
