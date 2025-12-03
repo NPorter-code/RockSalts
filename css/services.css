@@ -127,3 +127,9 @@ p {
 li {
     color: #f1faf8;
 }
+
+/*Mobile View code :D*/
+
+@media (max-width: 600px) {
+    
+}
