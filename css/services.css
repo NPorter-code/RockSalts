@@ -17,7 +17,7 @@
         margin-right: auto;
     }
 
-    .dropdown{
+    .dropbtn{
         display: none;
         position: absolute;
         background-color: #e3f1fa;
