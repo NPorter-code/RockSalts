@@ -25,9 +25,8 @@
         z-index: 1;
     }
 
-    .items{
+    .dropdown-content{
         display: flex;
-        
     }
 
     .btn{
@@ -202,6 +201,12 @@
         text-decoration: none;
     }
 
+    .dropdown-content{
+        position: absolute;
+        overflow: auto;
+        z-index: 1;
+    }
+
     .navContainer{
         z-index: 2;
         border-bottom-style: ridge;
@@ -209,7 +214,6 @@
         margin-left: -8px;
         padding-bottom: 5px;
         padding-top: 5px;
-        display: flex;
         justify-content: flex-end;
         background-color: #4cabdf;
         margin-top: -8px;
