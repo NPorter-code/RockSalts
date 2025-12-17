@@ -169,16 +169,15 @@
         z-index: 1;
     }
 
+    .dropdown-content{
+        display: flex;
+        flex-wrap: wrap;                 ;
+    }
+
     .btn{
-        display: none;
-        margin-left: 20px;
-        margin-right: 60px;
-        background-color: #42a2d6;
+
         align-self: center;
         text-align: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-radius: 30px;
     }
 
     .exclude{
