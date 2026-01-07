@@ -175,7 +175,7 @@
     }
 
     .btn{
-
+        display: none;
         align-self: center;
         text-align: center;
     }
@@ -196,7 +196,7 @@
     }
 
     .btn a{
-        color:#f1faf8;
+        color:#c91414;
         text-decoration: none;
     }
 
@@ -215,7 +215,7 @@
         padding-top: 5px;
         justify-content: flex-end;
         background-color: #4cabdf;
-        margin-top: -8px;
+        margin-top: -8px;         
         position: fixed;
         z-index: 2;
         width: 100%;
