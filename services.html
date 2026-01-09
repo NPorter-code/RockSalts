@@ -15,7 +15,9 @@
         <!--Nav Bar-->
         <div class="navContainer">
             <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
-            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <button onclick="myFunction()" class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div id="myDropdown" class="dropdown-content">
                 <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
                 <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
@@ -43,6 +45,22 @@
                 <p>E-mailing: <br><br> Admin@saltshuttle.com</p>
             </div>
         </div>
-        <script src="click.js"></script>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+            }
+        }
+        }
+        </script>
     </body>
 </html>
