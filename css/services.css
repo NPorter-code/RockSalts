@@ -162,11 +162,22 @@
         margin-right: auto;
     }
 
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+
     .dropdown-content{
         display: none;
         position: absolute;
         flex-wrap: wrap;
+        z-index: 2;
+        background-color: #4cabdf;
+        margin-left: -5em;
+        margin-top: .25em;
     }
+
+    .show {display: block;}
 
     .btn{
         align-self: center;
@@ -191,12 +202,6 @@
     .btn a{
         color:#c91414;
         text-decoration: none;
-    }
-
-    .dropdown-content{
-        position: absolute;
-        overflow: auto;
-        z-index: 1;
     }
 
     .navContainer{
