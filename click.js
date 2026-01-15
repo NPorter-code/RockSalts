@@ -1,5 +1,6 @@
 function myFunction(){
     document.getElementById("myDropdown").classList.toggle("show")
+    document.getElementsByClassName("colors").classList.toggle("move")
 }
 
 window.onclick = function(event) {
