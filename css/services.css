@@ -152,12 +152,14 @@
     }
 
     .dropdown{
-        position: relative;
         display: inline-block;
     }
 
     .dropbtn {
         align-self: center;
+        position: inherit;
+        margin-top: 2.5em;
+        margin-left: 1em;
         font-size: 25px;
         border-style: none;
         background-color: #1393d8;
@@ -171,18 +173,19 @@
 
     .dropdown-content{
         display: none;
-        
+        position: absolute;
         flex-wrap: wrap;
         background-color: #4cabdf;
         border-bottom-style: ridge;
         border-color: #59abd8;
-        z-index: inherit;
+        width: 100%;
+        margin-top: 4em;
     }
 
     .show {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .btn{
@@ -191,10 +194,12 @@
     }
 
     .exclude{
+        float: right;
         padding-right: 10px;
         padding-left: 10px;
         padding-top: 10px;
         border-radius: 25px;
+        margin-right: 1em;
     }
 
     .exclude img{
@@ -205,8 +210,8 @@
 
     .btn a{
         color:#c91414;
-        align-self: center;
-        text-decoration: none;
+        border-bottom-style: ridge;
+        border-color: #59abd8;
     }
 
     .navContainer{
@@ -245,7 +250,7 @@
         background-color: #5cb8e9;
     }
 
-    .move{margin-top: 10em;}
+    .move{margin-top: 25em;}
 
     .moving {
         margin-top: -1em;
