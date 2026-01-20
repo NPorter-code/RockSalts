@@ -151,34 +151,39 @@
         font-style: normal;
     }
 
-    .formbtn {
-        background-color: #4cabdf;
-        border-radius: 15em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .dropdown{
         position: relative;
         display: inline-block;
     }
 
+    .dropbtn {
+        align-self: center;
+        font-size: 25px;
+        border-style: none;
+        background-color: #1393d8;
+        color: #f1faf8;
+        border-radius: 10em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
     .dropdown-content{
         display: none;
-        position: absolute;
+        
         flex-wrap: wrap;
-        z-index: 1;
         background-color: #4cabdf;
         border-bottom-style: ridge;
         border-color: #59abd8;
-        justify-self: center;
+        z-index: inherit;
     }
 
-    .show {display: block;}
+    .show {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 
     .btn{
         align-self: center;
@@ -186,8 +191,6 @@
     }
 
     .exclude{
-        margin-right: auto;
-        margin-left: 50px;
         padding-right: 10px;
         padding-left: 10px;
         padding-top: 10px;
@@ -196,12 +199,13 @@
 
     .exclude img{
         height: 3.3em;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .btn a{
         color:#c91414;
+        align-self: center;
         text-decoration: none;
     }
 
@@ -212,7 +216,7 @@
         margin-left: -8px;
         padding-bottom: 5px;
         padding-top: 5px;
-        justify-content: flex-end;
+        justify-content: space-between;
         background-color: #4cabdf;
         margin-top: -8px;         
         position: fixed;
