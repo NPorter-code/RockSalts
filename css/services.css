@@ -17,16 +17,15 @@
         margin-right: auto;
     }
 
-    .dropbtn{
+    .dropbtn {
         display: none;
-        position: absolute;
-        background-color: #e3f1fa;
-        min-width: 160px;
-        z-index: 1;
     }
 
     .dropdown-content{
         display: flex;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
     }
 
     .btn{
