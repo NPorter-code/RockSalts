@@ -186,7 +186,6 @@
         align-self: center;
         justify-content: center;
         text-align: center;
-        background-color: #5cb8e9;
     }
 
     .exclude{
@@ -203,7 +202,7 @@
     }
 
     .btn a{
-        color:#c91414;
+        color:#f1faf8;
         align-self: center;
         text-decoration: none;
     }
