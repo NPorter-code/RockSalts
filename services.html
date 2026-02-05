@@ -12,32 +12,33 @@
     <body>
         <!--Nav Bar-->
         <div class="navContainer">
-            <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
             <button onclick="myFunction()" class="dropbtn">
-                <i onclick="myFunction()" class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div id="myDropdown" class="dropdown-content">
+            <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
                 <br>
                 <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
                 <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
                 <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
                 <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
             </div>
-        </div>
         <div class="paylink">
             <div class="colors">
                 <h1>Salt Shuttle Services</h1>
                 <p>We currently service the Layton, Woods Cross, Kaysville, Fruit Heights, Centerville, and Bountiful areas in Utah</p>
                 <p>Here are the services we offer:</p>
                 <ul class="moving">
-                    <li>Standard Ice Melt - $44.95<br>"For most standard driveways and walkways"<br></li>
-                    <li>Heavy Coverage Ice Melt - $49.95<br>"For long/steep driveways or heavy ice"<br><br></li>
+                    <li>Standard Ice Melt - $44.95<br>"For most standard driveways and walkways"</li>
+                    <li>Heavy Coverage Ice Melt - $49.95<br>"For long/steep driveways or heavy ice"</li>
                 </ul>
+                <br>
                 <p>Add ons / Other options:</p>
                 <ul class="moving1">
-                    <li>Same day/storm priority - +14.95<br></li>
-                    <li>Basic Ice Melt - $29.95<br></li>
-                    <li>Ice Melt Bag Delivery Only - $17.95<br><br></li>
+                    <li>Same day/storm priority - +14.95</li>
+                    <li>Basic Ice Melt - $29.95</li>
+                    <li>Ice Melt Bag Delivery Only - $17.95</li>
                 </ul>
                 <h1>Contact us by:</h1>
                 <p>Texting: <br><br> (385) 528 - 8255 <br> or <br> (385) 220 - 4997</p>
@@ -48,17 +49,17 @@
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-        if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
+            document.getElementById("myDropdown").classList.toggle("show");
             }
-        }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
         }
         </script>
     </body>

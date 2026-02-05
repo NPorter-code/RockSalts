@@ -91,3 +91,12 @@ input{
     font-size: 1.25em;
     width: 364px;
 }
+
+.info {
+    margin-top: 5em;
+}
+
+p {
+    color: #f1faf8;
+
+}

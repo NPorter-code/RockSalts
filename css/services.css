@@ -67,7 +67,6 @@
         padding-bottom: 5px;
         padding-top: 5px;
         display: flex;
-        justify-content: flex-end;
         background-color: #4cabdf;
         margin-top: -8px;
         position: fixed;
@@ -160,17 +159,25 @@
     .dropbtn {
         font-size: 25px;
         border-style: none;
+        height: 2.5em;
         background-color: #1393d8;
         color: #f1faf8;
         border-radius: 10em;
         padding-left: 1em;
         padding-right: 1em;
         padding-top: .5em;
+        margin-left: 12.5px;
         padding-bottom: .5em;
     }
 
     .dropdown-content{
         display: none;
+        margin-top: 2em;
+        position: fixed;
+        width: 101.2%;
+        margin-top: 60px;
+        z-index: 2;
+        margin-left: -15px;
         flex-wrap: wrap;
         background-color: #4cabdf;
         border-bottom-style: ridge;
@@ -178,7 +185,7 @@
     }
 
     .show {
-        display: flex;
+        display: block;
         flex-direction: column;
     }
 
@@ -192,7 +199,8 @@
         padding-right: 10px;
         padding-left: 10px;
         padding-top: 10px;
-        border-radius: 25px;
+        margin-right: 25px;
+        margin-left: auto;
     }
 
     .exclude img{
@@ -209,18 +217,19 @@
 
     .navContainer{
         z-index: 2;
+        display: flex;
         border-bottom-style: ridge;
         border-color: #59abd8;
         margin-left: -8px;
         padding-bottom: 5px;
         padding-top: 5px;
         justify-content: space-between;
+        float: left;
         background-color: #4cabdf;
         margin-top: -8px;         
         position: fixed;
         z-index: 2;
         width: 100%;
-        float: right;
     }
 
     .navContainer i{
@@ -250,12 +259,13 @@
     }
 
     .moving1 {
-        margin-top: -.5em;
+        margin-top: -1em;
     }
 
     ul {
         list-style-type: none;
     }
+
 
     li {
         justify-self: center;
@@ -287,5 +297,6 @@
 
     li {
         color: #f1faf8;
+        padding: 3px;
     }
 }
