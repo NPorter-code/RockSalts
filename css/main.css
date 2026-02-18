@@ -1,174 +1,665 @@
-body{
-    background-color: #e3f1fa;
-    font-family: PT-sans, sans-serif, "asap";
-    overflow-x: hidden;
+@media (min-width: 992px){
+    body{
+        background-color: #e3f1fa;
+        font-family: PT-sans, sans-serif, "asap";
+        font-weight: 600;
+        font-style: normal;
+        overflow-x: hidden;
+    }
+
+    .formbtn {
+        background-color: #4cabdf;
+        border-radius: 15em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .dropdown-content{
+        display: flex;
+        float: right;
+        position: absolute;
+        min-width: 160px;
+        z-index: 2;
+    }
+
+    .btn{
+        margin-left: 10px;
+        margin-right: 30px;
+        background-color: #42a2d6;
+        align-self: center;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        margin-top: -.25em;
+    }
+
+    .exclude{
+        margin-left: 50px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        border-radius: 25px;
+    }
+
+    .exclude img{
+        height: 3.3em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn a{
+        color:#f1faf8;
+        text-decoration: none;
+    }
+
+    .extra{
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+    }
+
+    .navContainer{
+        border-bottom-style: ridge;
+        border-color: #59abd8;
+        margin-left: -8px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        display: flex;
+        background-color: #4cabdf;
+        margin-top: -8px;
+        position: fixed;
+        width: 100%;
+        float: right;
+    }
+
+    .navContainer i{
+        color: #f1faf8;
+    }
+    
+    .fixedpos{
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .UI{
+        position: relative;
+        text-align: center;
+    }
+
+    .Uiwords{
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        top: 0px;
+        color: #e2e8e9;
+    }
+
+    .Uiwords p{
+        font-size: 18px;
+        color: #e2e8e9;
+    }
+
+    .Ui1 {
+        position: relative;
+        z-index: 1;
+        width: 105%;
+        min-width: 500px;
+        height: 500px;
+        object-fit: cover;
+        margin-left: -8px;
+        filter: brightness(85%);
+    }
+
+    .Ui2 {
+        display: none;
+    }
+
+    .Uiboxes{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        margin-top: -4.5em;
+        flex-wrap: wrap;
+    }
+
+    .big {
+        display: flex;
+    }
+
+    .Uibox{
+        width: 250px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: center;
+        background-color: #59abd8;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-top-width: 0px;
+        border-top-color: #4ca0ce;
+        border-top-style: solid;
+        border-right-width: 1px;
+        border-right-color: #4ca0ce;
+        border-right-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #4ca0ce;
+        border-bottom-style: solid;
+        border-left-width: 0px;
+        border-left-color: #4ca0ce;
+        border-left-style: solid;
+    }
+
+    .Aboxes{
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+    }
+
+    .Abox{
+        position: relative;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 340px;
+        background-color: #60b0e2;
+        text-align: center;
+        border-style: solid;
+        border-color: #37a5e0;
+        border-width: 2px;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 1em;
+    }
+
+    .fuckinwordsidk{
+        text-align: center;
+        margin-top: 8em;
+    }
+
+    .Abox p{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 22px;
+        color: #f1faf8;
+    }
+
+    p{
+        line-height: 1.5;
+        color: #f1faf8;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+}
+@media (min-width: 650px) and (max-width: 992px){
+    body{
+        background-color: #e3f1fa;
+        font-family: PT-sans, sans-serif, "asap";
+        font-weight: 600;
+        font-style: normal;
+        overflow-x: hidden;
+    }
+
+    .formbtn {
+        background-color: #4cabdf;
+        border-radius: 15em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .dropdown-content{
+        display: flex;
+        width: 20em;
+        flex-wrap: wrap;
+        position: absolute;
+        z-index: 2;
+        margin-top: -.5em;
+        margin-right: 50px;
+        justify-self: center;
+    }
+
+    .btn{
+        width: 65px;
+        margin-right: 40px;
+        background-color: #42a2d6;
+        align-self: center;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        margin-top: 2px;
+    }
+
+    .btn a{
+        font-size: 8px;
+    }
+
+    .exclude{
+        margin-right: auto;
+        margin-left: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        border-radius: 25px;
+    }
+
+    .exclude img{
+        height: 3.3em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn a{
+        color:#f1faf8;
+        text-decoration: none;
+    }
+
+    .extra{
+        display: flex;
+        justify-content: flex-end;
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+    }
+
+    .navContainer{
+        z-index: 2;
+        border-bottom-style: ridge;
+        border-color: #59abd8;
+        margin-left: -8px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        display: flex;
+        background-color: #4cabdf;
+        margin-top: -8px;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        float: right;
+    }
+
+    .navContainer i{
+        color: #f1faf8;
+    }
+
+    .fixedpos{
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .UI{
+        position: relative;
+        text-align: center;
+    }
+
+    .Uiwords{
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        width: 600px;
+        top: 0px;
+        color: #e2e8e9;
+    }
+
+    .Uiwords p{
+        font-size: 18px;
+        color: #e2e8e9;
+    }
+
+    .Ui1 {
+        display: none;
+    }
+
+    .Ui2 {
+        position: relative;
+        z-index: 1;
+        width: 105%;
+        min-width: 500px;
+        height: 700px;
+        object-fit: cover;
+        margin-left: -8px;
+        filter: brightness(75%);
+    }
+
+    .Uiboxes{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        margin-top: -4.5em;
+        flex-wrap: wrap;
+    }
+
+    .big {
+        display: flex;
+    }
+
+    .Uibox{
+        width: 250px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: center;
+        background-color: #59abd8;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-top-width: 0px;
+        border-top-color: #4ca0ce;
+        border-top-style: solid;
+        border-right-width: 1px;
+        border-right-color: #4ca0ce;
+        border-right-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #4ca0ce;
+        border-bottom-style: solid;
+        border-left-width: 0px;
+        border-left-color: #4ca0ce;
+        border-left-style: solid;
+    }
+
+    .Aboxes{
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+    }
+
+    .Abox{
+        position: relative;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 340px;
+        background-color: #60b0e2;
+        text-align: center;
+        border-style: solid;
+        border-color: #37a5e0;
+        border-width: 2px;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 1em;
+    }
+
+    .fuckinwordsidk{
+        text-align: center;
+        margin-top: 8em;
+    }
+
+    .Abox p{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 22px;
+        color: #f1faf8;
+    }
+
+    p{
+        line-height: 1.5;
+        color: #f1faf8;
+    }
+
+    h1{
+        font-size: 50px;
+    }
 }
 
-textarea{
-    font-family: sans-serif;
-    font-size: 1.25em;
-}
+@media (max-width: 650px) {
+    body{
+        background-color: #e3f1fa;
+        font-family: PT-sans, sans-serif, "asap";
+        font-weight: 600;
+        font-style: normal;
+    }
 
-.btn{
-    margin-left: 20px;
-    margin-right: 60px;
-    background-color: #42a2d6;
-    align-self: center;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 30px;
-}
+    .dropdown{
+        display: flex;
+        position: relative;
+        display: inline-block;
+        justify-content: center;
+    }
 
-.exclude{
-    margin-right: auto;
-    margin-left: 50px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    border-radius: 25px;
-}
+    .dropbtn {
+        font-size: 25px;
+        border-style: none;
+        height: 2.5em;
+        background-color: #1393d8;
+        color: #f1faf8;
+        border-radius: 10em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: .5em;
+        margin-left: 12.5px;
+        padding-bottom: .5em;
+    }
 
-.exclude img{
-    height: 3.3em;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+    .dropdown-content{
+        display: none;
+        margin-top: 2em;
+        position: fixed;
+        width: 101.2%;
+        margin-top: 60px;
+        z-index: 2;
+        margin-left: -15px;
+        flex-wrap: wrap;
+        background-color: #4cabdf;
+        border-bottom-style: ridge;
+        border-color: #59abd8;
+    }
 
-.btn a{
-    color:#f1faf8;
-    text-decoration: none;
-}
+    .show {
+        display: block;
+        flex-direction: column;
+    }
 
-.navContainer{
-    z-index: 2;
-    border-bottom-style: ridge;
-    border-color: #59abd8;
-    margin-left: -8px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #4cabdf;
-    margin-top: -8px;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    float: right;
-}
+    .btn{
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    }
 
-.navContainer i{
-    color: #f1faf8;
-}
+    .exclude{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-right: 25px;
+        margin-left: auto;
+    }
 
-.UI{
-    position: relative;
-    text-align: center;
-}
+    .exclude img{
+        height: 3.3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.Uiwords{
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    top: 0px;
-    color: #e2e8e9;
-}
+    .btn a{
+        color:#f1faf8;
+        align-self: center;
+        text-decoration: none;
+    }
 
-.Uiwords p{
-    font-size: 18px;
-    color: #e2e8e9;
-}
+    .navContainer{
+        z-index: 2;
+        display: flex;
+        border-bottom-style: ridge;
+        border-color: #59abd8;
+        margin-left: -8px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        justify-content: space-between;
+        float: left;
+        background-color: #4cabdf;
+        margin-top: -8px;         
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+    }
 
-.Ui1 {
-    position: relative;
-    z-index: 1;
-    width: 105%;
-    min-width: 500px;
-    height: 500px;
-    object-fit: cover;
-    margin-left: -8px;
-    filter: brightness(85%);
-}
+    .navContainer i{
+        color: #f1faf8;
+    }
 
-.Uiboxes{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    margin-top: -4.5em;
-}
+    .UI{
+        position: relative;
+        text-align: center;
+    }
 
-.Uibox{
-    width: 250px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    text-align: center;
-    background-color: #59abd8;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-top-width: 0px;
-    border-top-color: #4ca0ce;
-    border-top-style: solid;
-    border-right-width: 1px;
-    border-right-color: #4ca0ce;
-    border-right-style: solid;
-    border-bottom-width: 0px;
-    border-bottom-color: #4ca0ce;
-    border-bottom-style: solid;
-    border-left-width: 0px;
-    border-left-color: #4ca0ce;
-    border-left-style: solid;
-}
+    .Uiwords{
+        margin-top: -100px;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        width: 300px;
+        top: 0px;
+        color: #e2e8e9;
+    }
 
-.Aboxes{
-    margin-top: 3em;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5em;
-}
+    .Uiwords p{
+        font-size: 18px;
+        color: #e2e8e9;
+    }
 
-.Abox{
-    position: relative;
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: 340px;
-    background-color: #60b0e2;
-    text-align: center;
-    border-style: solid;
-    border-color: #37a5e0;
-    border-width: 2px;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    padding-bottom: 1em;
-}
+    .Ui1 {
+        display: none;
+    }
 
-.fuckinwordsidk{
-    text-align: center;
-    margin-top: 8em;
-}
+    .Ui2 {
+        position: relative;
+        z-index: 1;
+        width: 105%;
+        min-width: 500px;
+        height: 1000px;
+        object-fit: cover;
+        margin-left: -8px;
+        filter: brightness(75%);
+    }
 
-.Abox p{
-    font-size: 18px;
-}
+    .Uiboxes{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        margin-top: -32em;
+        flex-wrap: wrap;
+    }
 
-h3{
-    font-size: 22px;
-    color: #f1faf8;
-}
+    .big {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-p{
-    line-height: 1.5;
-    color: #f1faf8;
-}
+    .Uibox{
+        width: 350px;
+        height: 150px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: center;
+        background-color: #59abd8;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-top-width: 0px;
+        border-top-color: #4ca0ce;
+        border-top-style: solid;
+        border-right-width: 1px;
+        border-right-color: #4ca0ce;
+        border-right-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #4ca0ce;
+        border-bottom-style: solid;
+        border-left-width: 0px;
+        border-left-color: #4ca0ce;
+        border-left-style: solid;
+    }
 
-h1{
-    font-size: 50px;
+    .Aboxes{
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+    }
+
+    .Abox{
+        position: relative;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 340px;
+        background-color: #60b0e2;
+        text-align: center;
+        border-style: solid;
+        border-color: #37a5e0;
+        border-width: 2px;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 1em;
+    }
+
+    .fuckinwordsidk{
+        text-align: center;
+        margin-top: 8em;
+    }
+
+    .Abox p{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 22px;
+        color: #f1faf8;
+    }
+
+    p{
+        line-height: 1.5;
+        color: #f1faf8;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+}
 }

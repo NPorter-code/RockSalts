@@ -3,26 +3,35 @@
     <head>
         <title>Catalyst Rock Salts</title>
         <meta charset="utf-8">
-        <meta name="veiwport" content="width-device-width, initial-scale=1">
+        <meta name="veiwport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://use.typekit.net/sxb6bat.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--fontawesome icons-->
-        <script src="https://kit.--fontawesome.com/e1899146a.js"></script>
-        <script async data-id="five-sever" src="http://localhost:5500/fiveserver.js"></script>
-    </head>
+        <script src="https://kit.fontawesome.com/2570fe89af.js" crossorigin="anonymous"></script>
     <body>
         <!--Nav Bar-->
-        <div class="navContainer">
-            <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
-            <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
-            <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
-            <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
-            <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
+        <div class="fixedpos">
+            <div class="navContainer">
+                <button onclick="myFunction()" class="dropbtn">
+                    <i onclick="myFunction()" class="fa-solid fa-bars" style="pointer-events: none;"></i>
+                </button>
+                <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
+            </div>
+            <div class="extra">
+                <div id="myDropdown" class="dropdown-content">
+                    <br>
+                    <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
+                    <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
+                    <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
+                    <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
+                </div>
+            </div>
         </div>
         <div class="UI">
              <img class="Ui1" src="media/UI1.jpg">
+             <img class="Ui2" src="media/UI2.jpg">
              <div class="Uiwords">
                 <h1>Salt Shuttle</h1>
                 <p>At Salt Shuttle, we take the weight off our customers' shoulders, literally. Whether it's delivering, lifting, or loading, we handle the heavy work with care so our customers can focus on what matters most. Our mission is to make everyday tasks effortless, building trust through reliable service and personal support</p>
@@ -31,21 +40,25 @@
         </div>
         <!--These are the boxes just under the UI giving base information about the services and values of SaltShuttle-->
         <div class="Uiboxes">
-            <div class="Uibox">
-                <h3>Quality Work at a Fair Price</h3>
-                <p>We provide quick, easy, and reliable service to our customers at a great price!</p>
+            <div class="big">
+                <div class="Uibox">
+                    <h3>Quality Work at a Fair Price</h3>
+                    <p>We provide quick, easy, and reliable service to our customers at a great price!</p>
+                </div>
+                <div class="Uibox">
+                    <h3>Customers Come First</h3>
+                    <p>Your convenience is our top priority because making life easier for you is what we're here for</p>
+                </div>
             </div>
-            <div class="Uibox">
-                <h3>Customers Come First</h3>
-                <p>Your convenience is our top priority because making life easier for you is what we're here for</p>
-            </div>
-            <div class="Uibox">
-                <h3>Salt Shuttle, we go Above & Beyond</h3>
-                <p>A little extra effort, every time, because that's how neighbors should do it.</p>
-            </div>
-            <div class="Uibox">
-                <h3>Local & Reliable</h3>
-                <p>Local roots. Reliable service. Every delivery, every time.</p>
+            <div class="big">
+                <div class="Uibox">
+                    <h3>Salt Shuttle, we go Above & Beyond</h3>
+                    <p>A little extra effort, every time, because that's how neighbors should do it.</p>
+                </div>
+                <div class="Uibox">
+                    <h3>Local & Reliable</h3>
+                    <p>Local roots. Reliable service. Every delivery, every time.</p>
+                </div>
             </div>
         </div>
         <br>
@@ -78,6 +91,20 @@
             </div>
         </div>
         <br>
-        
+        <script>
+            function myFunction(){
+                document.getElementById("myDropdown").classList.toggle("show")
+                document.getElementsByClassName("colors").classList.toggle("move")
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdown = document.getElementsByClassName("dropdown-content");
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
