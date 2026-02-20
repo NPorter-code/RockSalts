@@ -1,38 +1,65 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Catalyst Rock Salts</title>
         <meta charset="utf-8">
-        <meta name="veiwport" content="width-device-width, initial-scale=1">
+        <meta name="veiwport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/abtus.css">
-        <link rel="stylesheet" href="https://use.typekit.net/sxb6bat.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--fontawesome icons-->
-        <script src="https://kit.--fontawesome.com/e1899146a.js"></script>
-    </head>
+        <script src="https://kit.fontawesome.com/2570fe89af.js" crossorigin="anonymous"></script>
     <body>
         <!--Nav Bar-->
-        <div class="navContainer">
-            <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
-            <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
-            <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
-            <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
-            <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
+        <div class="fixedpos">
+            <div class="navContainer">
+                <button onclick="myFunction()" class="dropbtn">
+                    <i onclick="myFunction()" class="fa-solid fa-bars" style="pointer-events: none;"></i>
+                </button>
+                <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
+            </div>
+            <div class="extra">
+                <div id="myDropdown" class="dropdown-content">
+                    <br>
+                    <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
+                    <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
+                    <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
+                    <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
+                </div>
+            </div>
         </div>
+        <br>
         <div class="info">
+            <h1>ABOUT US:</h1>
             <p>
-                At Salt Shuttle, we go above and beyond because the problem is obvious. We solve that pain and make it easy and stress free.
+                At Salt Shuttle, we go above and beyond because the problem is obvious. We solve that pain and make it easy and stress free.<br><br>
 
-Salt Shuttle is built on reliability.
-Fast and on time delivery.
-Fair and transparent pricing.
-Direct communication.
+                Salt Shuttle is built on reliability.<br>
+                Fast and on time delivery.<br>
+                Fair and transparent pricing.<br>
+                Direct communication.<br><br>
 
-We do not see you as an order or a transaction. We see you as a person. A neighbor. A friend we are showing up for.
+                We do not see you as an order or a transaction. We see you as a person. A neighbor. A friend we are showing up for.<br><br>
 
-We move the salt, so you can focus on what matters.
+                We move the salt, so you can focus on what matters.
             </p>
+            <img src="media/6775.jpg">
+            <img src="media/6776.jpg">
         </div>
+        <script>
+            function myFunction(){
+                document.getElementById("myDropdown").classList.toggle("show")
+                document.getElementsByClassName("colors").classList.toggle("move")
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdown = document.getElementsByClassName("dropdown-content");
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
