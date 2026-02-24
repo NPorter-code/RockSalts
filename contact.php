@@ -1,16 +1,15 @@
-<!DOCTYPE html>
 <html lang="en">
-    <title>Catalyst Rock Salts</title>
+    <html lang="en">
+    <head>
+        <title>Catalyst Rock Salts</title>
         <meta charset="utf-8">
-        <meta name="veiwport" content="width-device-width, initial-scale=1">
+        <meta name="veiwport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/abtus.css">
-        <link rel="javascript" href="form.js">
-        <link rel="stylesheet" href="https://use.typekit.net/sxb6bat.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--fontawesome icons-->
-        <script src="https://kit.--fontawesome.com/e1899146a.js"></script>
-    </head>
+        <script src="https://kit.fontawesome.com/2570fe89af.js" crossorigin="anonymous"></script>
     <body>
 
 <?php
@@ -54,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (mail($to, $subject, $email_message, $headers)) {
                 echo "thank you for your valued question, it has been sent!";
             } else {
-                echo "you fucked it up, it doesnt work kell...";
+                echo "nope";
             }
         }
     }
@@ -62,22 +61,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
         <!--Nav Bar-->
-        <div class="navContainer">
-            <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
-            <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
-            <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
-            <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
-            <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
+        <div class="fixedpos">
+            <div class="navContainer">
+                <button onclick="myFunction()" class="dropbtn">
+                    <i onclick="myFunction()" class="fa-solid fa-bars" style="pointer-events: none;"></i>
+                </button>
+                <div class="exclude"><a href="main.html"><img src="media/logov2.png"></a></div>
+            </div>
+            <div class="extra">
+                <div id="myDropdown" class="dropdown-content">
+                    <br>
+                    <div class="btn"><a href="main.html"><h2>Home</h2></a></div>
+                    <div class="btn"><a href="abtus.html"><h2>About Us</h2></a></div>
+                    <div class="btn"><a href="contact.php"><h2>Contact Us</h2></a></div>
+                    <div class="btn"><a href="services.html"><h2>Services</h2></a></div>
+                </div>
+            </div>
         </div>
+        <br>
         <div class="contactform">
-            <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
+            <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?" enctype="multipart/form-data">
                 <!--Name-->
-                <label for="name">Name:</label>
+                <label for="name">Name:</label><br>
                 <input id="form" type="text" name="name" autocomplete="off">
                 <span class="error">* <?php echo $nameErr;?></span>
                 <br><br>
                 <!--Email-->
-                <label for="email">E-Mail:</label>
+                <label for="email">E-Mail:</label><br>
                 <input id="form" type="text" name="email" autocomplete="off">
                 <span class="error">* <?php echo $emailErr;?></span>
                 <br><br>
@@ -91,5 +101,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <span class="submitted"></span>
             </form>
         </div>
+        <script>
+            function myFunction(){
+                document.getElementById("myDropdown").classList.toggle("show")
+                document.getElementsByClassName("colors").classList.toggle("move")
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdown = document.getElementsByClassName("dropdown-content");
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
